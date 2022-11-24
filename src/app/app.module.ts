@@ -10,6 +10,7 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 import { ViewAllEmployeeComponent } from './view-all-employee/view-all-employee.component';
+import { NavbarComponent } from './navbar/navbar.component';
 const myRoute: Routes=[
   {path:"",
   component:AdminLoginComponent
@@ -39,7 +40,8 @@ const myRoute: Routes=[
     SearchEmployeeComponent,
     EditEmployeeComponent,
     DeleteEmployeeComponent,
-    ViewAllEmployeeComponent
+    ViewAllEmployeeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
