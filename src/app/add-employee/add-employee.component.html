@@ -7,34 +7,39 @@
       <div class="row g-3 d-flex justify-content-center align-items-center h-100">
           <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
               <label for="" class="form-label">Employee Code</label>
-              <input type="text" name="" id="" class="form-control">
+              <input type="text" name="EmpCode" [(ngModel)]="EmpCode"  class="form-control">
           </div>
           <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
               <label for="" class="form-label">Employee Name</label>
-              <input type="text" name="" id="" class="form-control">
+              <input type="text" name="name" [(ngModel)]="name"  class="form-control">
           </div>
+
           <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10">
               <label for="" class="form-label">Designation</label>
-              <input type="text" name="" id="" class="form-control">
-          </div>
+              <input type="text" name="Designation" [(ngModel)]="Designation"  class="form-control">
+          </div>          
+          <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10">
+            <label for="" class="form-label">Salary</label>
+            <input type="text" name="Salary" [(ngModel)]="Salary"  class="form-control">
+        </div>
           <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
               <label for="" class="form-label">Phone No</label>
-              <input type="text" name="" id="" class="form-control">
+              <input type="text" name="PhoneNo"  [(ngModel)]="PhoneNo" class="form-control">
           </div>
           <div class="col col-10 col-sm-5 col-lg-52 col-xl-5 col-xxl-5">
               <label for="" class="form-label">Email</label>
-              <input type="email" name="" id="" placeholder="name@example.com"  class="form-control">
+              <input type="email" name="Email" [(ngModel)]="Email"  placeholder="name@example.com"  class="form-control">
           </div>
           <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
               <label for="" class="form-label">Company Website</label>
-              <input type="text" name="" id="" placeholder="www.example.com" class="form-control">
+              <input type="text" name="CompanyWebsite" [(ngModel)]="CompanyWebsite" placeholder="www.example.com" class="form-control">
           </div>
           <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
               <label for="" class="form-label">Experiance</label>
-              <input type="text" name="" id="" class="form-control">
+              <input type="text" name="Experiance"  [(ngModel)]="Experiance" class="form-control">
           </div>                
           <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10 text-center">
-              <a class="btn btn-primary w-50">Submit</a>
+              <a class="btn btn-primary w-50" (click)="readValue()">Submit</a>
           </div>
       </div>
   </div>
